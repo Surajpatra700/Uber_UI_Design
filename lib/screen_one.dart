@@ -100,7 +100,7 @@ class _ScreenoneState extends State<Screenone> {
                                       constraints:
                                           BoxConstraints(maxWidth: 271.0),
                                       child: Text(
-                                        'SAKET DISCTRICT CENTER,DISTRICT CENTER, SECTOR 6, PUSHP VIHAR, NEW DELHI, DELHI 110017',
+                                        'SAKET DISCTRICT CENTER, DISTRICT CENTER, SECTOR 6, PUSHP VIHAR, NEW DELHI, DELHI 110017',
                                         style: TextStyle(
                                             fontSize: 14.0,
                                             fontWeight: FontWeight.w400,
