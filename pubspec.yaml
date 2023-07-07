@@ -63,6 +63,7 @@ flutter:
     - assets/images/banner-payment.png
     - assets/images/clock.png
     - assets/images/stacktype.png
+    - assets/images/bottom-navigation.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

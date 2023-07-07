@@ -22,7 +22,7 @@ class _ScreenoneState extends State<Screenone> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Icon(Icons.search, color: Colors.black),
@@ -31,24 +31,24 @@ class _ScreenoneState extends State<Screenone> {
                           style: TextStyle(
                               fontWeight: FontWeight.w300,
                               fontSize: 20,
-                              color: Colors.black),
+                              color: Colors.blueGrey),
                         ),
                       ],
                     ),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      crossAxisAlignment: CrossAxisAlignment.end,
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Image.asset('assets/images/clock.png',
                             color: Colors.black),
                         Text(
                           'Now',
                           style: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              fontSize: 18,
-                              color: Colors.black),
+                              fontWeight: FontWeight.w400,
+                              fontSize: 24,
+                              color: Color.fromARGB(203, 0, 0, 0)),
                         ),
-                        Icon(Icons.arrow_drop_down, color: Colors.black),
+                        Icon(Icons.arrow_drop_down, color: const Color.fromARGB(255, 10, 3, 3)),
                       ],
                     ),
                   ],
@@ -88,14 +88,12 @@ class _ScreenoneState extends State<Screenone> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Container(
-                                      // selectcitywalkmallvZb (1:170)
-                                      margin: EdgeInsets.fromLTRB(
-                                          0.0, 0.0, 0.0, 4.0),
+                                      margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 4.0),
                                       child: Text(
                                         'Select Citywalk Mall',
                                         style: TextStyle(
                                           fontSize: 18,
-                                          fontWeight: FontWeight.w500,
+                                          fontWeight: FontWeight.w600,
                                           color: Colors.black,
                                         ),
                                       ),
@@ -176,7 +174,7 @@ class _ScreenoneState extends State<Screenone> {
                                     fontSize: 14.0,
                                     fontWeight: FontWeight.w400,
                                     height: 1.192999976,
-                                    color: Color(0xff545454),
+                                    color: Colors.black,
                                   ),
                                 ),
                               ),
@@ -191,9 +189,9 @@ class _ScreenoneState extends State<Screenone> {
             ),
             Container(
               margin: EdgeInsets.fromLTRB(16.0, 0.0, 0.0, 0.0),
-              padding: EdgeInsets.fromLTRB(0.0, 15.0, 0.0, 0.0),
-              width: 344,
-              height: 133,
+              padding: EdgeInsets.fromLTRB(0.0, 10.0, 15.0, 0.0),
+              width: 600,
+              height: 180,
               child: Image.asset('assets/images/banner-payment.png'),
             ),
             Container(
@@ -227,12 +225,12 @@ class _ScreenoneState extends State<Screenone> {
                             children: [
                               Container(
                                 margin:
-                                    EdgeInsets.fromLTRB(0.0, 0.0, 157.0, 0.0),
+                                    EdgeInsets.fromLTRB(10.0, 0.0, 163.0, 0.0),
                                 child: Text(
                                   'Suggestions',
                                   style: TextStyle(
                                       fontSize: 22.0,
-                                      fontWeight: FontWeight.w500,
+                                      fontWeight: FontWeight.w600,
                                       height: 1.1929999265,
                                       letterSpacing: 0.22,
                                       color: Color(0xff000000)),
@@ -256,7 +254,28 @@ class _ScreenoneState extends State<Screenone> {
                           ),
                         ),
                         Container(
+                          width: 500,
+                          height: 100,
                           child: Image.asset('assets/images/stacktype.png'),
+                        ),
+                        Container(
+                          child: Text('Ways to save with Uber',
+                                    style: TextStyle(
+                                    fontSize: 20.0,
+                                    fontWeight: FontWeight.w500,
+                                    height: 3,
+                                    letterSpacing: 0.16,
+                                    color: Color(0xff000000),
+                                  ),
+                              ),
+                          ),
+                          Container(
+                            width: 5,
+                            height: 5,
+                          ),
+                          Container(
+                          margin: EdgeInsets.fromLTRB(0.0, 12.0, 0.0, 0.0),
+                          child: Image.asset('assets/images/bottom-navigation.png'),
                         ),
                       ],
                     ),
