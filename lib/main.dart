@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+// <<<<<<< main
+import 'package:uber_ui_design/screen_one.dart';
+=======
 import 'screen3.dart';
+// >>>>>>> main
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +16,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        fontFamily: "OpenSans",
+        primaryColor: Colors.blue,
       ),
-      home: const HomePage(),
+
+      home: Screenone(),
+
+      //home: const HomePage(),
+
     );
   }
 }
@@ -32,3 +42,4 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
